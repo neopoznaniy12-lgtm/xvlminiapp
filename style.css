@@ -244,3 +244,96 @@ body {
 .big-card-right {
   margin-left: 40px;
 }
+
+/* Адаптив под телефоны */
+@media (max-width: 768px) {
+
+    /* Контейнеры не должны быть в 2 колонки */
+    .row-bottom,
+    .row-top,
+    .big-cards,
+    .hero,
+    .combo-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Меню по центру и с меньшими отступами */
+    .menu {
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    /* Телефонная кнопка вниз и по центру */
+    .phone-btn {
+        position: static;
+        margin-top: 15px;
+        width: 80%;
+        justify-content: center;
+    }
+
+    /* Главный hero-блок */
+    .hero {
+        padding: 30px 20px;
+    }
+
+    .hero-left {
+        max-width: none;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .hero-right img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Блок Техника + Программа */
+    .combo-title {
+        font-size: 42px;
+        margin-top: 20px;
+    }
+
+    .combo-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Большие карточки */
+    .big-cards {
+        flex-direction: column;
+    }
+
+    .big-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .big-card-left img {
+        width: 160px;
+        margin-bottom: 15px;
+    }
+
+    .big-card-right {
+        margin-left: 0;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .btn-small {
+        width: 70%;
+        display: inline-block;
+    }
+}
+
